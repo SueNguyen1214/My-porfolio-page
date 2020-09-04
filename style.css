@@ -1,0 +1,55 @@
+*{
+  box-sizing:border-box;
+}
+
+/*to create a background image for the logo*/
+header{
+ background-image:url("picture/dark-green-leaves.jpg");
+  height: 1000 px;
+  margin:2 px 5 px 15 px5 px;
+  border:2 px none oldlace;
+  border-radius:1%;
+}
+/*make the logo and job title white color and same font*/
+header h1, h3{
+  family-font:"Bradley Hand",cursive;
+  color:white;
+}
+/* this is the size of logo, my name */
+header h1{
+  size:80 px;
+}
+/*size of the job title*/
+header h3{
+  size:25;
+}
+/*sub-title: info and more about me part*/
+h2{
+  family-font:"DejaVu Sans",serif;
+  size:40 px;
+  color:cadetblue;
+}
+/*background color of the page*/
+body{
+  background-color:antiquewhite;
+}
+/*style for the paragraph throughout the page*/
+p{
+  family-font:"Noto Sans","sans-serif";
+  size:12;
+  line-height:20 px;
+  text-align:left;
+}
+/*contact section*/
+footer {
+  border:1px none olivedrab;
+}
+/*to align text to the center of the page*/
+.center{
+  text-align:center;
+}
+/*This is the pseudo class to change the link color at different stages*/
+a:link{color:blue;}
+a:visited{color:red;}
+a:hover{color:green;}
+a:active{color:yellow;}
