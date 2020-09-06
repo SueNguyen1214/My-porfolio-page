@@ -59,6 +59,7 @@ a:active{color:yellow;}
 .group{
   display:flex;
   flex-direction:column;
+  justify-content:center;
 }
 .item{
   flex:1;
