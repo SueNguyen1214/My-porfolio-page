@@ -5,31 +5,32 @@
 /*to create a background image for the logo*/
 header{
  background-image:url("picture/dark-green-leaves.jpg");
-  height: 300px;
+  height: 200px;
   margin:2px 5px 15px 5px;
-  border:2px none oldlace;
+  border:2 px none oldlace;
   border-radius:1%;
 }
 /*make the logo and job title white color and same font*/
-header h1, h3{
+header div{
   family-font:"Bradley Hand",cursive;
   color:white;
-  display:flex;
+  text-align:center;
+  display: flex;
   flex-direction:column;
   justify-content:center;
 }
 /* this is the size of logo, my name */
 header h1{
-  size:70px;
+  size:500px;
 }
 /*size of the job title*/
 header h3{
-  size:25px;
+  size:400px;
 }
 /*sub-title: info and more about me part*/
 h2{
   family-font:"DejaVu Sans",serif;
-  size:40px;
+  size:80px;
   color:cadetblue;
 }
 /*background color of the page*/
@@ -42,31 +43,51 @@ p{
   size:12px;
   line-height:20px;
   text-align:left;
+  
 }
 /*contact section*/
 footer {
   border:1px none olivedrab;
 }
+.wrapper{
+  width:1200px;
+  margin:auto;
+}
 /*to align text to the center of the page*/
 .center{
   text-align:center;
+}
+/*color for the About me box*/
+.bg-callout{
+  background-color:burlywood;
+}
+/*sub-header for the body*/
+main h3{
+  color:chocolate;
+  zie:25px;
+}
+main h4{
+  color:darkred;
 }
 /*This is the pseudo class to change the link color at different stages*/
 a:link{color:blue;}
 a:visited{color:red;}
 a:hover{color:green;}
 a:active{color:yellow;}
+/*flex-box*/
 .group{
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content:center;
+  padding:50px 20px;
 }
 .item{
   flex:1;
+  padding:0px 50px;
 }
-@ media all and (min-width:800px){
-  body{
+/*media query*/
+@media all and (min-width:800px){
+  .group{
     flex-direction:row;
   }
-} 
-  
+}
