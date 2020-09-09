@@ -1,13 +1,13 @@
 /*header*/
 /*to create a background image for the logo*/
 header{
- background-image:url("picture/dark-green-leaves.jpg");
+  background-image:url("picture/dark-green-leaves.jpg");
   height: 250px;
   border-radius:1%;
 }
 /*To make the name & job title white and at the center for the mobile version*/
 header h1{
-  family-font:"Bradley Hand",cursive;
+  font-family:"Comic Sans MS", cursive, sans-serif;
   color:white;
   text-align:center;
   size:100px;
