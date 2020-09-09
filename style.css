@@ -1,76 +1,105 @@
-*{
-  box-sizing:border-box;
-}
-
+/*header*/
 /*to create a background image for the logo*/
 header{
  background-image:url("picture/dark-green-leaves.jpg");
-  height: 200px;
-  margin:2px 5px 15px 5px;
-  border:2 px none oldlace;
+  height: 250px;
   border-radius:1%;
 }
-/*make the logo and job title white color and same font*/
-header div{
+/*To make the name & job title white and at the center for the mobile version*/
+header h1{
   family-font:"Bradley Hand",cursive;
   color:white;
   text-align:center;
-  display: flex;
-  flex-direction:column;
+  size:100px;
+  letter-spacing:3px;
+  padding-top:20px;
+  margin:0;
+}
+
+/* for the navigation bar*/
+header nav{
+  display:flex;/*change the block display to flex*/
   justify-content:center;
 }
-/* this is the size of logo, my name */
-header h1{
-  size:500px;
+/*the items of the nav bar*/
+header nav ul{
+  display: flex;
+  padding-left:15px;
+ 
 }
-/*size of the job title*/
-header h3{
-  size:400px;
+/*to remove the bullet of the list*/
+header nav ul li{
+  list-style-type:none;
 }
-/*sub-title: info and more about me part*/
-h2{
-  family-font:"DejaVu Sans",serif;
+/*the link of nav bar items*/
+header nav ul li a{
+  text-decoration: none;
+  font-size:20px;
+  margin: 0 20px 0 0;
+}
+/* for bigger devices like laptop*/
+@media all and (min-width:800px){
+  header{
+    display: flex;
+    justify-content:space-between;
+    padding:0 25px;
+  }
+  header h1{
+    margin:20px 0;
+    padding-top:5px;
+  }
+  header nav{
+    margin-top:30px;
+  }
+}
+/*main body*/
+main{
+  padding:20px 10px;
+}
+
+/*sub-title: info,more about me, contact*/
+main h2{
+  font-family:Arial, Helvetica, sans-serif;
   size:80px;
   color:cadetblue;
-}
-/*background color of the page*/
-body{
-  background-color:antiquewhite;
-}
-/*style for the paragraph throughout the page*/
-p{
-  family-font:"Noto Sans","sans-serif";
-  size:12px;
-  line-height:20px;
-  text-align:left;
   
 }
-/*contact section*/
-footer {
-  border:1px none olivedrab;
+main h3{
+  color:chocolate;
+  zie:50px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.wrapper{
-  width:1200px;
-  margin:auto;
+main h4{
+  color:darkred;
+  size:30px;
+  font-family:Arial, Helvetica, sans-serif;
 }
-/*to align text to the center of the page*/
-.center{
-  text-align:center;
+p{
+  family-font:"Noto Sans",sans-serif;
+  size:12px;
+  line-height:2em;
+  text-align:left;  
+}
+
+
+/*background color of the page and sections*/
+body{
+  background-color:antiquewhite;
 }
 /*color for the About me box*/
 .bg-callout{
   background-color:burlywood;
 }
-/*sub-header for the body*/
-main h3{
-  color:chocolate;
-  zie:25px;
+.bg-project{
+  background-color:bisque;
 }
-main h4{
-  color:darkred;
+/*body images*/
+main img{
+  width:100%;
 }
+
 /*This is the pseudo class to change the link color at different stages*/
-a:link{color:blue;}
+a:link{color:brown;}
 a:visited{color:red;}
 a:hover{color:green;}
 a:active{color:yellow;}
@@ -78,16 +107,35 @@ a:active{color:yellow;}
 .group{
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  padding:50px 20px;
+  padding:50px 10px;
 }
 .item{
   flex:1;
-  padding:0px 50px;
+  padding:0px 10px;
 }
+.item-double{
+  flex:2;
+}
+form label{
+  display:block;
+}
+/*footer*/
+footer {
+  text-align:center;
+ }
+
+
+
 /*media query*/
 @media all and (min-width:800px){
   .group{
     flex-direction:row;
   }
+}
+/*forms*/
+form input, form textarea{
+  width:100%;
+}
+form textarea{
+  height:150px;
 }
